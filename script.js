@@ -78,6 +78,11 @@ function resetTimer() {
   document.location.reload(true);
 }
 
+const play = () => {
+  audio.play();
+}
+
+
 reset.addEventListener("click", resetTimer);
 start.addEventListener("click",startTimer);
 stopGame.addEventListener("click", stopTimer);

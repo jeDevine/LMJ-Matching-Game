@@ -22,6 +22,8 @@ var stoptime = true;
 const reset = document.getElementById("reset");
 const start = document.getElementById("start");
 const stopGame = document.getElementById("stop");
+const audio = document.querySelector("#audio");
+audio.volume = 0.2;
 
 
 function startTimer() {

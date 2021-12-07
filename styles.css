@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(34, 34, 158);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  color: rgb(190, 175, 40);
+}
+#timer {
+  color: rgb(190, 175, 40);
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
+image {
+  margin: 5px;
+}
+.grid-container {
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  width: 100vw;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+  height: 80%;
+  width: 70%;
+  object-fit: contain;
+  border-radius: 5%;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: x-large;
+  font-weight: bold;
+  background: linear-gradient(red, black, white);
+  color: white;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    font-size: xx-large;
+  }
+}

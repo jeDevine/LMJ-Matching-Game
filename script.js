@@ -67,7 +67,7 @@ function timerCycle() {
       hr = '0' + hr;
     }
 
-    timer.innerHTML = "Timer " + hr + ":" + min + ":" + sec + ":";
+    timer.innerHTML = "Timer " + hr + ":" + min + ":" + sec ;
 
     setTimeout("timerCycle()", 1000);
   }

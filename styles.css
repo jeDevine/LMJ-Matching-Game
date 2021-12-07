@@ -34,7 +34,6 @@ image {
   display: grid;
   justify-items: center;
   align-items: center;
-
   width: 100vw;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -59,8 +58,23 @@ button {
   font-weight: bold;
   background: linear-gradient(red, black, white);
   color: white;
-  border: 2px solid gold;
+  border: 5px solid gold;
   margin: 10px;
+  animation-name: borderchange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes borderchange {
+  33% {
+    border: 5px solid gold;
+  }
+  66% {
+    border: 5px solid white;
+  }
+  100% {
+    border: 5px solid gold;
+  }
 }
 
 .hidden {

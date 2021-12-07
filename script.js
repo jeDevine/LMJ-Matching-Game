@@ -104,8 +104,12 @@ function checkForMatch() {
   const cards = document.querySelectorAll('img')
   const optionOneId = cardsChosenId[0]
   const optionTwoId = cardsChosenId[1]
+  if (cardsChosenId[0] === cardsChosenId[1]){
+    alert("you have chosen the same card!")
+    cards[optionOneId].setAttribute('src', 'images\\pokemon cardback 2.0.jpg')
+  }
   
-    if (cardsChosen[0] === cardsChosen[1]) {
+    else if (cardsChosen[0] === cardsChosen[1]) {
     
     cards[optionOneId].setAttribute('src', 'images\\blue-color.svg')
     cards[optionTwoId].setAttribute('src', 'images\\blue-color.svg')

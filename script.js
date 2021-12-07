@@ -2,14 +2,14 @@
 
   //card options
   const cardArray = [
-    {name: "pikachu", img:"images\\Pikachu 100x100.png"},
-    {name: "pikachu", img:"images\\Pikachu 100x100.png"},
-    {name: "bulbasaur", img:"images\\Bulbasaur.png"},
-    {name: "bulbasaur", img:"images\\Bulbasaur.png"},
-    {name: "charizard", img:"images\\Charizard.png"},
-    {name: "charizard", img:"images\\Charizard.png"},
-    {name: "squirtle", img:"images\\Squirtle.png"},
-    {name: "squirtle", img:"images\\Squirtle.png"}
+    {name: "pikachu", img:"images\\Pikachu.jpg"},
+    {name: "pikachu", img:"images\\Pikachu.jpg"},
+    {name: "bulbasaur", img:"images\\Venusaur.jpg"},
+    {name: "bulbasaur", img:"images\\Venusaur.jpg"},
+    {name: "charizard", img:"images\\Charizard-Legendary-Collection3.jpg"},
+    {name: "charizard", img:"images\\Charizard-Legendary-Collection3.jpg"},
+    {name: "squirtle", img:"images\\Blastoise.jpg"},
+    {name: "squirtle", img:"images\\Blastoise.jpg"}
   ];
   
   const grid = document.querySelector('.grid')
@@ -107,8 +107,8 @@ function checkForMatch() {
   
     if (cardsChosen[0] === cardsChosen[1]) {
     
-    cards[optionOneId].setAttribute('src', 'images/blank.jpg')
-    cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
+    cards[optionOneId].setAttribute('src', 'images\\blue-color.svg')
+    cards[optionTwoId].setAttribute('src', 'images\\blue-color.svg')
     cards[optionOneId].removeEventListener('click', flipCard)
     cards[optionTwoId].removeEventListener('click', flipCard)
     cardsWon.push(cardsChosen)

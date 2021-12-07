@@ -112,6 +112,7 @@ function checkForMatch() {
     cards[optionOneId].removeEventListener('click', flipCard)
     cards[optionTwoId].removeEventListener('click', flipCard)
     cardsWon.push(cardsChosen)
+    
   } else {
     cards[optionOneId].setAttribute('src', 'images\\pokemon cardback 2.0.jpg')
     cards[optionTwoId].setAttribute('src', 'images\\pokemon cardback 2.0.jpg')
@@ -119,7 +120,18 @@ function checkForMatch() {
   cardsChosen = []
   cardsChosenId = []
   
+  if(cardsWon.length >= 4 ){
+
+    stoptime = true;
+    alert(`You won the ${badgeArray[randomBadge]} badge!`)
+  };
 }
+
+let badgeArray = ["Boulder","Cascade", "Thunder", "Rainbow", "Soul", "Marsh","Volcano", "Earth"];
+let randomBadge = Math.floor(Math.random() * 7)
+
+// Game finished
+
 
 //flip your card
 function flipCard() {
